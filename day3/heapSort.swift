@@ -2,11 +2,27 @@ class Heap {
     private var nums: [Int]
 
     init(_ arr: [Int]) {
-        nums = []
+        // nums = arr
         
         for n in arr {
             add(n)
         }
+
+        // for i in (0 ... (nums.count/2 - 1)).reversed() {
+        //     var small = i
+
+        //     if (i * 2 + 1) < nums.count && nums[i*2+1] < nums[small] {
+        //         small = i*2 + 1
+        //     }
+
+        //     if i*2+2 < nums.count && nums[i*2+2] < nums[small] {
+        //         small = i*2+2
+        //     }
+
+        //     if small != i {
+        //         nums.swapAt(small, i)
+        //     }
+        // }
     }
 
     func add(_ num: Int) {
